@@ -3,7 +3,7 @@ import { Section, List, Title, Item, Span } from './Statistics.styles.js';
 export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <List>
         {stats.map(stat => (
           <Item key={stat.id}>
