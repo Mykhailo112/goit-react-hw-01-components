@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const getIsOnline = props => {
+const getIsOnline = (props) => {
   switch (props.isOnline) {
     case true:
       return 'green';

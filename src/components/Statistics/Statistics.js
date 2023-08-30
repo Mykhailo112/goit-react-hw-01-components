@@ -1,9 +1,9 @@
 import { Section, List, Title, Item, Span } from './Statistics.styles.js';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Title></Title>
+      <Title>{title}</Title>
       <List>
         {stats.map(stat => (
           <Item key={stat.id}>

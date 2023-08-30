@@ -1,6 +1,6 @@
 import { Item, Photo, Text, Status } from './FriendList.styles.js';
 
-export const FriendCard = (avatar, name, isOnline) => {
+export const FriendCard = ({ avatar, name, isOnline }) => {
   return (
     <Item>
       <Status isOnline={isOnline}></Status>
